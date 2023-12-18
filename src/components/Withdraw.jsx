@@ -151,10 +151,10 @@ export default function Withdraw() {
                 <Button type="submit" variant="secondary" onClick={handleDashboard}>
                   Dashboard
                 </Button> */}
-                    <div>
-                      <Link to="/deposit">Deposit</Link>
+                    <div className="mt-3">
+                      <Link to="/deposit"><Button variant="secondary">Deposit</Button></Link>
                       {" or "}
-                      <Link to="/dashboard">Dashboard</Link>
+                      <Link to="/dashboard"><Button variant="secondary">Dashboard</Button></Link>
                     </div>
                   </>
                 )

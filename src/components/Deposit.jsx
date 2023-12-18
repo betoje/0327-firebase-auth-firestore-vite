@@ -155,9 +155,9 @@ function Deposit() {
                       Dashboard
                     </Button> */}
                     <div className="mt-3">
-                      <Link to="/withdraw">Withdraw</Link>
+                      <Link to="/withdraw"><Button variant="secondary">Withdraw</Button></Link>
                       {" or "}
-                      <Link to="/dashboard">Dashboard</Link>
+                      <Link to="/dashboard"><Button variant="secondary">Dashboard</Button></Link>
                     </div>
                   </>
                 )

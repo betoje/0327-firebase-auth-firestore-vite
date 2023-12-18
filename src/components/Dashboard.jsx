@@ -6,6 +6,8 @@
 // React
 import React, { useEffect, useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+// React Bootstrap
+import { Button, Form, Row, Col, Container } from "react-bootstrap";
 // React Context
 import UserContext from "../UserContext";
 // Firebase
@@ -90,9 +92,11 @@ function Dashboard() {
             You can make account transactions using the{" "}
             <strong>navigation bar</strong>
             <div>
-              <Link to="/deposit">Deposit</Link>
-              {" or "}
-              <Link to="/withdraw">Withdraw</Link>
+              <Link to="/deposit"><Button variant="secondary">Deposit</Button></Link>
+              {"    "}
+              <Link to="/withdraw"><Button variant="secondary">Withdraw</Button></Link>
+              {"    "}
+              <Link to="/alldata"><Button variant="secondary">Users</Button></Link>
             </div>
           </div>
         </div>

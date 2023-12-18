@@ -61,7 +61,7 @@ function NavBar() {
               <Nav.Link className="navlink" as={NavLink} to="/alldata">
                 Users({allUsers.length})
                 <AiOutlineUser />
-                {userC.email}
+                <strong>{userC.email}</strong>
                 {/* <strong>{cUser.name}</strong> */}
               </Nav.Link>
             </Nav>
