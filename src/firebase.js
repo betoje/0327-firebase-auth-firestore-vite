@@ -25,6 +25,8 @@ import {
   setDoc,
 } from "firebase/firestore";
 
+import Swal from 'sweetalert2';
+
 const firebaseConfig = {
   apiKey: "AIzaSyCSXWhA4eNukDw9AIauBp6iZBFgHl6yv9M",
   authDomain: "fir-authentication-42bda.firebaseapp.com",
@@ -78,6 +80,8 @@ const signInWithGoogle = async () => {
 const logInWithEmailAndPassword = async (email, password) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
+    Swal.fire("Succesful Login");
+    // alert('Succesful Login');
   } catch (err) {
     console.error(err);
     alert(err.message);
@@ -97,6 +101,8 @@ const registerWithEmailAndPassword = async (name, email, password) => {
       email,
       balance: 0
     })
+    Swal.fire("Succesful Register");
+    // alert('Succesful Register')
 
     // await addDoc(collection(db, "users"), { // old code
     //   uid: user.uid,
